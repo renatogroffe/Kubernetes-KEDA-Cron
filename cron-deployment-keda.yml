@@ -5,11 +5,11 @@ metadata:
 spec:
   minReplicaCount: 4
   scaleTargetRef:
-    name: contagem-deployment
+    name: webapp
   triggers:
   - type: cron
     metadata:
       timezone: America/Sao_Paulo
-      start: 35 19 * * *
-      end: 37 19 * * *
-      desiredReplicas: "10"
+      start: 37 22 * * *
+      end: 39 22 * * *
+      desiredReplicas: "12"
